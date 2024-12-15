@@ -1,0 +1,141 @@
+*body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #001f3f;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  width: auto;
+  height: fit-content;
+  padding: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px 0 0 4px;
+}
+
+#add-task {
+  margin-left: 0.5rem;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.add-button {
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button img {
+  width: 24px;
+  height: 24px; 
+  margin: 5px;
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
+
+.add-button:focus {
+  outline: none;
+}
+.card-header {
+  background-color: #cdd5e0;
+  font-size: 17px;
+}
+.card-footer {
+  font-size: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.delete-button, .up-button, .down-button {
+  margin-left: 0.5rem;
+  
+}
+#new-task{
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    font-size: 16px;
+  }  
+}
+@media (max-width: 550px) {
+  body {
+    font-size: 14px;
+    color: #213547;
+  }
+  
+  .image {
+    width: 100%; 
+  }
+  
+  .button {
+    padding: 8px 12px; 
+  }
+}
